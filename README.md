@@ -44,8 +44,20 @@ app.save_image(colored_ascii_image, 'colored_ascii_image.png')
 app.save_image(inverted_colored_ascii_image, 'inverted_colored_ascii_image.png')
 ```
 
+## Examples
+
+Colored ASCII Image
+
+![Colored ASCII Image][colored-ascii-image]
+
+Inverted, Colored ASCII Image
+
+![Inverted, Colored ASCII Image][inverted-colored-ascii-image]
+
 ## License
 [MIT][mit-license]
 
 [pip-url]: https://pip.pypa.io/en/stable/
 [mit-license]: https://choosealicense.com/licenses/mit/
+[colored-ascii-image]: /examples/colored_ascii_image.png
+[inverted-colored-ascii-image]: /examples/inverted_colored_ascii_image.png
