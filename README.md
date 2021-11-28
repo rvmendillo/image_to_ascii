@@ -59,5 +59,5 @@ Inverted, Colored ASCII Image
 
 [pip-url]: https://pip.pypa.io/en/stable/
 [mit-license]: https://choosealicense.com/licenses/mit/
-[colored-ascii-image]: /examples/colored_ascii_image.png
-[inverted-colored-ascii-image]: /examples/inverted_colored_ascii_image.png
+[colored-ascii-image]: https://raw.githubusercontent.com/rvmendillo/image_to_ascii/main/examples/colored_ascii_image.png
+[inverted-colored-ascii-image]: https://raw.githubusercontent.com/rvmendillo/image_to_ascii/main/examples/inverted_colored_ascii_image.png
