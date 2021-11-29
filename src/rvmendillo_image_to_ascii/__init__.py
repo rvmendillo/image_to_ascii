@@ -6,7 +6,7 @@ class ImageToASCII:
         self.charset = list('#Wo- ')
         self.font = ImageFont.truetype('Consolas.TTF', 15)
     
-    def generate_ascii_text(self, target_width=100, character_width=8, character_height=18, inverted=False):
+    def generate_ascii_text(self, target_width=100, character_width=7, character_height=10, inverted=False):
         if inverted:
             charset = self.charset[::-1]
         else:
@@ -18,7 +18,7 @@ class ImageToASCII:
         ascii_text = '\n'.join(ascii_characters[i:i+target_width] for i in range(0, number_of_pixels, target_width))
         return ascii_text
     
-    def generate_colored_ascii_image(self, target_width=100, character_width=8, character_height=18, inverted=True):
+    def generate_colored_ascii_image(self, target_width=100, character_width=7, character_height=10, inverted=True):
         if inverted:
             charset = self.charset[::-1]
             color = (0, 0, 0)
