@@ -1,8 +1,11 @@
 from PIL import Image, ImageDraw, ImageFont
 
 class ImageToASCII:
-    def __init__(self, image_path):
-        self.image = Image.open(image_path)
+    def __init__(self, image_path, from_array=False):
+        if from_array:
+            self.image = Image.fromarray(image_path)
+        else:
+            self.image = Image.open(image_path)
         self.charset = list('#Wo- ')
         self.font = ImageFont.truetype('Consolas.TTF', 15)
     
