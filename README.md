@@ -55,6 +55,7 @@ Inverted, Colored ASCII Image
 ![Inverted, Colored ASCII Image][inverted-colored-ascii-image]
 
 ## License
+
 [MIT][mit-license]
 
 [pip-url]: https://pip.pypa.io/en/stable/
