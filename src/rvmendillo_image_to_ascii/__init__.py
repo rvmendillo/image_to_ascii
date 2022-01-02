@@ -1,4 +1,6 @@
 from PIL import Image, ImageDraw, ImageFont
+from io import BytesIO
+from base64 import b64encode
 
 class ImageToASCII:
     def __init__(self, image_path, from_array=False):
@@ -65,3 +67,9 @@ class ImageToASCII:
         
     def save_image(self, image, filename='colored_ascii_image.png'):
         image.save(filename)
+    
+    def convert_image_to_base64(self, image):
+        temporary_file = BytesIO()
+        image.save(temporary_file, format='PNG')
+        base64_string = b64encode(temporary_file.getvalue())
+        return base64_string
