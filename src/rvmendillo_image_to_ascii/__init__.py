@@ -3,13 +3,16 @@ from io import BytesIO
 from base64 import b64encode
 
 class ImageToASCII:
-    def __init__(self, image_path, from_array=False):
+    def __init__(self, image_path, from_array=False, default_font=False):
         if from_array:
             self.image = Image.fromarray(image_path)
         else:
             self.image = Image.open(image_path)
         self.charset = list('#Wo- ')
-        self.font = ImageFont.truetype('Consolas.TTF', 15)
+        if default_font:
+            self.font = ImageFont.load_default()
+        else:
+            self.font = ImageFont.truetype('Consolas.TTF', 15)
     
     def generate_ascii_text(self, target_width=100, character_width=7, character_height=10, inverted=False):
         if inverted:
