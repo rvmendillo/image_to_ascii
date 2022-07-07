@@ -4,12 +4,12 @@ from base64 import b64encode
 from requests import get
 
 class ImageToASCII:
-    def __init__(self, image_path, from='local', font_path=None, font_size=15, charset=list('#Wo- ')):
-        if from == 'array':
+    def __init__(self, image_path, source='local', font_path=None, font_size=15, charset=list('#Wo- ')):
+        if source == 'array':
             self.image = Image.fromarray(image_path)
-        elif from == 'local':
+        elif source == 'local':
             self.image = Image.open(image_path)
-        elif from == 'url':
+        elif source == 'url':
             self.image = Image.open(get(image_path).raw)
         self.charset = charset
         if font_path:
