@@ -16,7 +16,7 @@ class ImageToASCII:
             self.font = ImageFont.truetype(font_path, font_size)
         else:
             try:
-                self.font = ImageFont.truetype('Consolas.TTF', font_size)
+                self.font = ImageFont.truetype('./Consolas.TTF', font_size)
             except:
                 self.font = ImageFont.load_default()
     
