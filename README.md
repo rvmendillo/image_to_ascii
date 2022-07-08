@@ -1,6 +1,6 @@
 # ImageToASCII
 
-It generates and saves ASCII texts and colored images from pixels of a JPEG file.
+It generates and saves ASCII texts and colored images from pixels of an image file or URL.
 
 ## Installation
 
