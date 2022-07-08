@@ -10,7 +10,7 @@ class ImageToASCII:
         elif source == 'local':
             self.image = Image.open(image_path)
         elif source == 'url':
-            self.image = Image.open(get(image_path).raw)
+            self.image = Image.open(BytesIO(get(image_path).content))
         self.charset = charset
         if font_path:
             self.font = ImageFont.truetype(font_path, font_size)
